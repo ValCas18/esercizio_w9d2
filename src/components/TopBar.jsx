@@ -1,43 +1,16 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 
-const TopBar = () => {
-	return (
-		<>
-			<Navbar bg="dark" data-bs-theme="dark">
-				<Container>
-					<Navbar.Brand href="#home">Navbar</Navbar.Brand>
-					<Nav className="me-auto">
-						<Nav.Link href="#home">Home</Nav.Link>
-						<Nav.Link href="#features">Features</Nav.Link>
-						<Nav.Link href="#pricing">Pricing</Nav.Link>
-					</Nav>
-				</Container>
-			</Navbar>
-			<br />
-			<Navbar bg="primary" data-bs-theme="dark">
-				<Container>
-					<Navbar.Brand href="#home">Navbar</Navbar.Brand>
-					<Nav className="me-auto">
-						<Nav.Link href="#home">Home</Nav.Link>
-						<Nav.Link href="#features">Features</Nav.Link>
-						<Nav.Link href="#pricing">Pricing</Nav.Link>
-					</Nav>
-				</Container>
-			</Navbar>
+const MyTopBar = () => (
+	<Navbar bg="warning" data-bs-theme="dark">
+		<Container>
+			<Navbar.Brand href="#">My First NavBar</Navbar.Brand>
+			<Nav className="me-auto">
+				<Nav.Link href="#">Home</Nav.Link>
+				<Nav.Link href="#">About</Nav.Link>
+				<Nav.Link href="#">Browse</Nav.Link>
+			</Nav>
+		</Container>
+	</Navbar>
+);
 
-			<br />
-			<Navbar bg="light" data-bs-theme="light">
-				<Container>
-					<Navbar.Brand href="#home">Navbar</Navbar.Brand>
-					<Nav className="me-auto">
-						<Nav.Link href="#home">Home</Nav.Link>
-						<Nav.Link href="#features">Features</Nav.Link>
-						<Nav.Link href="#pricing">Pricing</Nav.Link>
-					</Nav>
-				</Container>
-			</Navbar>
-		</>
-	);
-};
-
-export default TopBar;
+export default MyTopBar;
