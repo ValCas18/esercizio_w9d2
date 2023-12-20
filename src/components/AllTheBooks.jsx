@@ -10,11 +10,11 @@ const MyCard = (props) => (
 			{fantasy.map((book) => (
 				<Col key={book.asin}>
 					<Card className="h-100">
-						<Card.Img variant="top" src={book.img} id="image" />
+						<Card.Img variant="top" src={book.img} className="image" />
 						<Card.Body className="d-flex flex-column justify-content-end align-items-center">
 							<Card.Title>{book.title}</Card.Title>
 							<Card.Text>
-								{book.category.toUpperCase()} - <Badge className="bg-success"> {book.price}</Badge>
+								{book.category.toUpperCase()} - <Badge className="bg-success"> {book.price} €</Badge>
 							</Card.Text>
 							<Button variant="primary">Buy</Button>
 						</Card.Body>
